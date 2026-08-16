@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "154691716657",
+    "project_id": "studypress-87af8",
+    "storage_bucket": "studypress-87af8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154691716657:android:811fba872f6ae36c58b710",
+        "android_client_info": {
+          "package_name": "com.study_press_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154691716657-gh2fe64d495ju9bqdckbg23d9o6t1qa6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.study_press_app",
+            "certificate_hash": "c015b4d686c40a045ec0bbdd379c8461a2013c6d"
+          }
+        },
+        {
+          "client_id": "154691716657-ed38q5bdkp73u05lpo97ku4b7ssjtsgl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOoUmCh0FStJT1vdDw8cWFZDyCJ746hj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154691716657-ed38q5bdkp73u05lpo97ku4b7ssjtsgl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "154691716657-b89ulbosoh2h27fn00eeo2su7o2iv3e6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.revinr.studyPressApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
