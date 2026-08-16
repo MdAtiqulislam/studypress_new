@@ -113,9 +113,9 @@ class HomePage extends StatelessWidget {
                     SizedBox(
                       height: AppDimensions.widgetPaddingVer,
                     ),
-                  titleSection(title: "More Courses"),
+                /*  titleSection(title: "More Courses"),
                   SizedBox(height: AppDimensions.widgetPaddingVer),
-                  courseItemSection(),
+                  courseItemSection(),*/
                   SizedBox(height: AppDimensions.widgetPaddingVer),
                   quoteSection(),
                   SizedBox(

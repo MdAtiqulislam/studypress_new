@@ -126,7 +126,7 @@ class MyDrawer extends StatelessWidget {
                   title: "My Enrollments",
                   image: "assets/icons/img.png"),
 
-              SizedBox(
+            /*  SizedBox(
                 height: AppDimensions.contentPaddingVer,
               ),
               BasicGridItem(
@@ -145,7 +145,7 @@ class MyDrawer extends StatelessWidget {
                   titleFontWight: FontWeight.normal,
                   title: "My Subscription",
                   image: "assets/icons/diamond.png"),
-
+*/
 
               myDrawerController.isLoading.value
                   ? const Center(child: CircularProgressIndicator())

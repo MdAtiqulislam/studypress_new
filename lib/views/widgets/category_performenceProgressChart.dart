@@ -1,4 +1,3 @@
-
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -9,14 +8,13 @@ import '../../constraints/app_colors.dart';
 import '../../constraints/dimensions.dart';
 import '../../constraints/header_text.dart';
 import '../../controllers/home_page_data_controller.dart';
+import '../../controllers/subject_list_controller.dart';
 import 'app_button.dart';
 
-
-
 class CategoryPerformanceProgressCart extends StatefulWidget {
- //final List<CategoryPerformancesProgress> data;
+  //final List<CategoryPerformancesProgress> data;
 
- const CategoryPerformanceProgressCart({/*required this.data, */super.key});
+  const CategoryPerformanceProgressCart({/*required this.data, */ super.key});
 
   @override
   State<CategoryPerformanceProgressCart> createState() =>
@@ -27,11 +25,10 @@ class _CategoryPerformanceProgressCartState
     extends State<CategoryPerformanceProgressCart> {
   //late List<TestData> _dataSource;
 
-
   @override
   void initState() {
     // TODO: implement initState
-/*   if(widget.data.isNotEmpty) {
+    /*   if(widget.data.isNotEmpty) {
      _dataSource = getDataSource(index: 0);
    }*/
     super.initState();
@@ -42,59 +39,80 @@ class _CategoryPerformanceProgressCartState
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: MediaQuery.of(context).orientation == Orientation.portrait
-            ? 350.h
-            : 180.w,
-        child: Swiper(
-                loop: false,
-                itemCount: homePageController.enrolledGrades.length,//homePageController.dashBoardData.value.userGrades?.length??0,
-                /*onIndexChanged: (index){
+      height: MediaQuery.of(context).orientation == Orientation.portrait
+          ? 350.h
+          : 180.w,
+      child: Swiper(
+        loop: false,
+        itemCount: homePageController.enrolledGrades.length,
+        //homePageController.dashBoardData.value.userGrades?.length??0,
+        /*onIndexChanged: (index){
                   _dataSource=getDataSource(index:index);
                 },*/
-                itemBuilder: (buildContext, index) {
-                  return Card(
-                    child: Column(
-
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        HeaderText(text: "Performance: ${homePageController.enrolledGrades[index].categoryName}"),
-                        SizedBox(height: AppDimensions.sectionPaddingVer.h,),
-                        ScoreTimeLine(
-                            score: homePageController.enrolledGrades[index].score??0
-                           // score:0
-                        ),
-                        SizedBox(height: AppDimensions.widgetPaddingVer,),
-                        (homePageController.enrolledGrades[index].inEnrollment??false)
-                            ?AppButton(
-                            bgColor: AppColors.appPrimaryColor,
-                            onTap: (){
-                              Get.toNamed("/subject_list_page",
-                                  arguments: [
-                                  homePageController.enrolledGrades[index].categoryId.toString()
-                                  ]);
-                            },
-                            child: HeaderText(text: "Start Learning",color: Colors.white,))
-                            :AppButton(
-                          shadowColor: Colors.grey.withOpacity(.5),
-                            bgColor: Colors.grey,
-                            onTap: null,
-                            child: HeaderText(text: "Not Enrolled",color: Colors.white,))
-
-                      ],
-                    ),
-                  );
-                },
-                pagination:  const SwiperPagination(
-                  builder:  DotSwiperPaginationBuilder(
-                      color: Colors.grey,
-                      activeColor: AppColors.appPrimaryColor),
+        itemBuilder: (buildContext, index) {
+          return Card(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                HeaderText(
+                  text:
+                      "Performance: ${homePageController.enrolledGrades[index].categoryName}",
                 ),
-                // loop: false,
-              )
+                SizedBox(height: AppDimensions.sectionPaddingVer.h),
+                ScoreTimeLine(
+                  score: homePageController.enrolledGrades[index].score ?? 0,
+                  // score:0
+                ),
+                SizedBox(height: AppDimensions.widgetPaddingVer),
+                (homePageController.enrolledGrades[index].inEnrollment ?? false)
+                    ? AppButton(
+                        bgColor: AppColors.appPrimaryColor,
+                        onTap: () {
+                          Get.put(SubjectListController()).fetchSubjectListData(
+                            id: homePageController
+                                .enrolledGrades[index]
+                                .categoryId
+                                .toString(),
+                          );
 
+                          Get.toNamed(
+                            "/subject_list_page",
+                            arguments: [
+                              homePageController
+                                  .enrolledGrades[index]
+                                  .categoryId
+                                  .toString(),
+                            ],
+                          );
+                        },
+                        child: HeaderText(
+                          text: "Start Learning",
+                          color: Colors.white,
+                        ),
+                      )
+                    : AppButton(
+                        shadowColor: Colors.grey.withOpacity(.5),
+                        bgColor: Colors.grey,
+                        onTap: null,
+                        child: HeaderText(
+                          text: "Not Enrolled",
+                          color: Colors.white,
+                        ),
+                      ),
+              ],
+            ),
+          );
+        },
+        pagination: const SwiperPagination(
+          builder: DotSwiperPaginationBuilder(
+            color: Colors.grey,
+            activeColor: AppColors.appPrimaryColor,
+          ),
+        ),
+        // loop: false,
+      ),
 
-
-/*            : Card(
+      /*            : Card(
                 child: Stack(
                   children: [
                     const SliverAppBarBackground(),
@@ -107,10 +125,10 @@ class _CategoryPerformanceProgressCartState
                   ],
                 ),
               )*/
-        );
+    );
   }
 
-/*  Widget chart(){
+  /*  Widget chart(){
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -183,7 +201,7 @@ class _CategoryPerformanceProgressCartState
     );
   }*/
 
-/*  List<TestData> getDataSource({required int index}) {
+  /*  List<TestData> getDataSource({required int index}) {
     final List<TestData> dataSource = [];
    if((widget.data[index].subjectPerformances??[]).isNotEmpty){
      widget.data[index].subjectPerformances?.forEach((element) {
