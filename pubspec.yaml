@@ -3,10 +3,10 @@ description: "A new Flutter project."
 publish_to: 'none'
 
 #android version
-version: 1.0.8+1000080
+#version: 1.0.8+1000080
 #iOS version
 
-#version: 1.0.5+1
+version: 1.0.5+1
 
 environment:
   sdk: ^3.8.1
