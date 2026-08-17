@@ -51,13 +51,13 @@ void main() async{
    // name: "StudyPress", // Consider removing this if you don't need a named instance
     options: (Platform.isIOS || Platform.isMacOS)
         ? FirebaseOptions(
-      apiKey: 'AIzaSyCA9SNLiFyc7PR64xx_L8Rkdi6RCKEkPGM',
-      appId: '1:154691716657:ios:1a14c03d288e38af58b710',
-      messagingSenderId: '154691716657',
-      projectId: 'studypress-87af8',
-      storageBucket: 'studypress-87af8.firebasestorage.app',
-      iosClientId: '154691716657-b89ulbosoh2h27fn00eeo2su7o2iv3e6.apps.googleusercontent.com',
-      iosBundleId: 'com.revinr.studyPressApp',
+      apiKey: 'AIzaSyCjJAS74AQ3lUBorCz_VUmw-j4l_nEeUDM',
+      appId: '1:979357280789:ios:9986432c5a6246a9317c1c',
+      messagingSenderId: '979357280789',
+      projectId: 'studypress-83bdf',
+      storageBucket: 'studypress-83bdf.firebasestorage.app',
+      //iosClientId: '154691716657-b89ulbosoh2h27fn00eeo2su7o2iv3e6.apps.googleusercontent.com',
+      iosBundleId: 'org.studypress.learn',
     )
         :FirebaseOptions(
       apiKey: 'AIzaSyDOoUmCh0FStJT1vdDw8cWFZDyCJ746hj0',

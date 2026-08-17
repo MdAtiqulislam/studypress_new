@@ -2,24 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>154691716657-tbju7kq6vl4bgf97vnh9f2v08ani2mmp.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.154691716657-tbju7kq6vl4bgf97vnh9f2v08ani2mmp</string>
-	<key>ANDROID_CLIENT_ID</key>
-	<string>154691716657-gh2fe64d495ju9bqdckbg23d9o6t1qa6.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCA9SNLiFyc7PR64xx_L8Rkdi6RCKEkPGM</string>
+	<string>AIzaSyCjJAS74AQ3lUBorCz_VUmw-j4l_nEeUDM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>154691716657</string>
+	<string>979357280789</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.studypress.learn</string>
+	<string>org.studypress.learn</string>
 	<key>PROJECT_ID</key>
-	<string>studypress-87af8</string>
+	<string>studypress-83bdf</string>
 	<key>STORAGE_BUCKET</key>
-	<string>studypress-87af8.firebasestorage.app</string>
+	<string>studypress-83bdf.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:154691716657:ios:647ca0e8f6de710d58b710</string>
+	<string>1:979357280789:ios:9986432c5a6246a9317c1c</string>
 </dict>
 </plist>
