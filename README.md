@@ -1,16 +1,46 @@
-# studypress_new
+# StudyPress (studypress_new)
 
-A new Flutter project.
+A Flutter education app (new iteration) — learning content, courses and exam preparation with a modular MVC-style codebase.
+
+## Features
+
+- Course browsing and learning flows
+- Auth and user profile management
+- Modular views with shared controllers, models and services
+- Utilities and constraints for consistent UI
+
+## Tech Stack
+
+- Flutter (Dart)
+- GetX-style controllers with modular views
+- REST API backend
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+Build a release APK:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+flutter build apk --release
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+```
+lib/
+├── views/        # Feature screens
+├── controllers/  # Business logic
+├── models/       # Data models
+├── services/     # API and platform services
+├── utilities/    # Helpers
+└── main.dart     # App entry point
+```
+
+## Notes
+
+- App label: "StudyPress" (Android), title "StudyPress"
+- No secrets or keystores are committed to this repository.
