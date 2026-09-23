@@ -2,6 +2,9 @@
 
 A Flutter education app (new iteration) — learning content, courses and exam preparation with a modular MVC-style codebase.
 
+[![Google Play](https://img.shields.io/badge/Google_Play-Download-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.study_press_app)
+
+
 ## Features
 
 - Course browsing and learning flows
